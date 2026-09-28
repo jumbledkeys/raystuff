@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Project - Page 2</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="navbar">
+            <div class="left">
+                <img src="sphicon.png" alt="Logo">
+            </div>
+            <div class="right">
+                <div class="name">
+                    <h1>Title: Switch On, Turn Off - Investigating Electricity and Water Waste at School</h1>
+                </div>
+                <div class="buttons">
+                    <div class="box"><a href="index.html"><button>Page 1</button></a></div>
+                    <div class="box"><a href="page2.html"><button>Page 2</button></a></div>
+                    <div class="box"><a href="page3.html"><button>Page 3</button></a></div>
+                    <div class="box"><a href="page4.html"><button>Page 4</button></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="pageheader">
+                <span class="pagelabel">Chapter C</span>
+                <h2 class="pagetitle">Evidence & Claim</h2>
+                <p class="pagesub">Observations, Interview Data, and Investigation Claims</p>
+            </div>
+            <div class="card cardwide">
+                <span class="tag">C2. DATA / EVIDENCE</span>
+                <h3 class="cardtitle">Observation & Interview Results</h3>
+                <h4 class="subheading">3-Day Observation Data</h4>
+                <p class="cardbody">
+                    From 3 days of observation during break and after school, the AC was left on almost every day with no one inside the music room. The bathroom sink kept dripping all day and many taps were left open during break.
+                </p>
+                <h4 class="subheading">Interview Results with Pak Eka (School Facilities Staff)</h4>
+                <p class="cardbody">
+                    <strong>Electricity / AC:</strong> Pak Eka stated that school electricity usage is not efficient, with bills reaching ~45 million IDR per month. All ACs are standard types (no inverter ACs). The compressors operate below peak efficiency because the distance between indoor and outdoor units is 15-20 meters (ideal is 5 meters), demanding large wattage. Additionally, the auditorium AC is 34 PK.
+                    <br><br>
+                    <strong>Water Conservation:</strong> The water bill is around 2 million IDR per month. Water can be saved during the rainy season because fields are watered naturally. In the dry season, saving water risks killing the grass, whereas using more water maintains the plants.
+                    <br><br>
+                    <em>"Saving adds risk, wasting makes students comfortable. All have consequences whether we want to be wasteful or efficient. We must be wise."</em>
+                </p>
+            </div>
+            <div class="gallery-container">
+                <div class="image-placeholder">
+                    <img src="Media.jpg" alt="Observation Photo 1">
+                </div>
+                <div class="image-placeholder">
+                    <img src="Media2.jpeg" alt="Observation Photo 2">
+                </div>
+                <div class="image-placeholder">
+                    <img src="table1.jpeg" alt="Observation Data Table" class="zoomable-img" onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="imageModal" class="modal" onclick="closeModal()">
+                <span class="close-btn">&times;</span>
+                <img class="modal-content" id="modalImg">
+            </div>
+            <script>
+                function openModal(imageSrc) {
+                    const modal = document.getElementById("imageModal");
+                    const modalImg = document.getElementById("modalImg");
+                    modal.style.display = "flex";
+                    modalImg.src = imageSrc;
+                }
+                function closeModal() {
+                    document.getElementById("imageModal").style.display = "none";
+                }
+            </script>
+            <div class="card cardwide">
+                <span class="tag">C3. CLAIM</span>
+                <h3 class="cardtitle">What Can We Conclude?</h3>
+                <p class="cardbody">
+                    <strong>Claim:</strong> Poor maintenance and careless use cause energy and water waste in our school.
+                    <br><br>
+                    <strong>Observations & Evidence:</strong> We found AC left on in an empty music room and sinks that are broken and left open, wasting electricity and water continuously.
+                    <br><br>
+                    <strong>Impact:</strong> Photos show AC running with lights off and empty rooms, alongside dripping taps making floors wet and slippery (unsafe).
+                    <br><br>
+                    <strong>Conclusion:</strong> Better awareness is required to turn off ACs and taps, alongside prompt maintenance to fix broken facilities to make the school cleaner, safer, and more sustainable.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

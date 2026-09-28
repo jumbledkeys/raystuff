@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+body {
+    background-color: #f5ede0;
+}
+.bg {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5ede0;
+}
+.navbar {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8d5bc;
+    border-bottom: 2px solid #d4b896;
+    padding: 0 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.left {
+    flex-shrink: 0;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 12px;
+}
+.left img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #c49a6c;
+}
+.right {
+    flex: 1;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+.name {
+    flex: 1;
+    min-width: 0;
+    height: 64px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #5c3d1e;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+}
+.name h1 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.buttons {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.box {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box a {
+    text-decoration: none;
+}
+.box button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #c49a6c;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    font-size: 0.88rem;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s, box-shadow 0.2s;
+    white-space: nowrap;
+}
+.box button:hover {
+    background-color: #a97d50;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+.box button:active {
+    box-shadow: none;
+    transform: translateY(1px);
+}
+.bottom {
+    width: 100%;
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 40px 40px;
+    gap: 28px;
+}
+.pageheader {
+    text-align: center;
+}
+.pagelabel {
+    display: inline-block;
+    background-color: #f0dcc4;
+    color: #7a4f2a;
+    font-size: 0.7rem;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 16px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    border: 1px solid #d4b896;
+}
+.pagetitle {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #3d2008;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+.pagesub {
+    font-size: 0.95rem;
+    color: #7a4f2a;
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.cardrow {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    gap: 24px;
+}
+.card {
+    flex: 1;
+    background-color: #fff8f0;
+    border: 1px solid #e8d5bc;
+    border-radius: 8px;
+    padding: 28px 28px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+}
+.cardwide {
+    width: 100%;
+    max-width: 960px;
+    flex: unset;
+}
+.tag {
+    display: inline-block;
+    background-color: #f0dcc4;
+    color: #7a4f2a;
+    font-size: 0.7rem;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    width: fit-content;
+    border: 1px solid #d4b896;
+}
+.cardtitle {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #3d2008;
+    margin-bottom: 10px;
+}
+.divider {
+    width: 40px;
+    height: 2px;
+    background-color: #c49a6c;
+    margin-bottom: 14px;
+    border-radius: 4px;
+}
+.cardbody {
+    font-size: 0.95rem;
+    color: #5c3d1e;
+    line-height: 1.8;
+}
+ol.cardbody, ul.cardbody {
+    padding-left: 1.4em;
+}
